@@ -392,6 +392,13 @@
     margin-top: 35px;
 }
 
+.calculator_options_group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
 .calculator_options_wrapper {
     background: #EDEDED;
     display: -ms-flexbox;
@@ -402,6 +409,7 @@
     align-items: center;
     max-width: 550px;
     width: 100%;
+    overflow-x: scroll;
 }
 
 .calculator_options_wrap {
@@ -1524,26 +1532,16 @@ p, label, option {
     max-width: 810px;
     width: 100%;
     padding: 30px 10px 80px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
 }
 
-.modal-img:not(:nth-child(9n+9)) {
-    margin-right: 16px;
-}
-
-@media all and (max-width: 900px) {
-    .modal-img:not(:nth-child(9n+9)) {
-        margin-right: 10px;
-    }
-}
-
-.modal-img:not(:nth-child(9n+9)) .modal-img:not(:nth-child(9n+9)) {
-    margin-right: 0;
-}
-
-@media all and (max-width: 800px) {
-    .modal-img:not(:nth-child(10n+10)) {
-        margin-right: 10px;
-    }
+.modal-img {
+    margin: 5px;
 }
 
 /* The container must be positioned relative: */
@@ -1602,7 +1600,6 @@ p, label, option {
 .select-items div, .select-selected {
     color: #3C3C3B;
     padding: 14px 16px;
-    text-indent: 10px;
     border: 1px solid transparent;
     border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
     cursor: pointer;
@@ -1626,15 +1623,6 @@ p, label, option {
 
 .select-items div:hover, .same-as-selected {
     background-color: rgba(0, 0, 0, 0.1);
-}
-
-.custom-select-img {
-    margin: 30px 0 30px;
-    width: 140px !important;
-}
-
-.custom-select-img .select-selected {
-    padding: 6px 16px;
 }
 
 .custom-select-top {
@@ -1679,6 +1667,15 @@ p, label, option {
     right: 16px;
 }
 
+.custom-select-img {
+    margin: 30px 0 30px;
+    width: 140px !important;
+}
+
+.custom-select-img .select-selected {
+    padding: 6px 16px;
+}
+
 [tooltip] {
     position: relative;
     font-family: 'Arial';
@@ -1721,7 +1718,7 @@ p, label, option {
     text-overflow: ellipsis;
     padding: 1ch 1.5ch;
     border-radius: .3ch;
-    box-shadow: 0px 10px 50px rgba(56, 82, 100, 0.1);
+    box-shadow: 0px 10px 50px rgba(44, 48, 51, 0.118);
     background: #fff;
     color: #3C3C3B;
     font-family: 'Arial';
