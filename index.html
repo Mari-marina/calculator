@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <title>gulp project</title>
+    <title>calculator</title>
 </head>
 
 <body>
@@ -41,35 +41,6 @@
             <div class="calculator_block">
         <div class="calculator_select-wrap">
             <h3 class="calculator_subtitle">Тип изделия:</h3>
-           <!-- <div class="calculator_select">
-                <button class="calculator_select-button-main">
-                    <div>a</div>
-
-                    <div>texta</div>
-                </button>
-
-                <ul class="calculator_select-list">
-                    <li class="calculator_select-item">
-                        <button class="calculator_select-button">
-                            <div>b</div>
-
-                            <div>textb</div>
-
-                            <a href="/">link</a>
-                        </button>
-                    </li>
-
-                    <li class="calculator_select-item">
-                        <button class="calculator_select-button">
-                            <div>c</div>
-
-                            <div>textc</div>
-
-                            <a href="/">link</a>
-                        </button>
-                    </li>
-                </ul>
-            </div> -->
             <div class="custom-select">
                 <select>
                   <option value="0">Панорамные окна</option>
@@ -79,20 +50,9 @@
                   <option value="4">Панорамные окна</option>
                 </select>
               </div>
-            <!-- <select class="calculator_select">
-                <option class="calculator_option">Окна</option>
-                <option class="calculator_option">Двери</option>
-                <option class="calculator_option">Балконные блоки</option>
-                <option class="calculator_option">Балконы и лоджии</option>
-                <option class="calculator_option">Панорамные окна</option>
-            </select> -->
         </div>
         <div class="calculator_select-wrap">
             <h3 class="calculator_subtitle">Профиль:</h3>
-            <!-- <select class="calculator_select">
-                <option class="calculator_option">Rehau Blitz - Акция</option>
-                <option class="calculator_option">Rehau Blitz - Акция</option>
-            </select> -->
             <div class="custom-select">
                 <select>
                   <option value="0">Rehau Blitz - Акция</option>
@@ -119,10 +79,6 @@
         </div>
         <div class="calculator_select-wrap">
             <h3 class="calculator_subtitle">Стеклопакет:</h3>
-            <!-- <select class="calculator_select">
-                <option class="calculator_option">1-камерный</option>
-                <option class="calculator_option">2-камерный</option>
-            </select> -->
             <div class="custom-select">
                 <select>
                   <option value="0">1-камерный</option>
@@ -166,19 +122,6 @@
         <div class="calculator_options">
             <h3 class="calculator_subtitle">Размеры и тип открывания:</h3>
             <div class="calculator_options_wrapper">
-                <!-- <select class="calculator_options_select">
-                    <option class="calculator_option">Поворотная правая</option>
-                    <option class="calculator_option">Поворотная левая</option>
-                    <option class="calculator_option">Глухая створка</option>
-                </select> -->
-                <!-- <div class="dropdown">
-                    <input class="text-box" type="text" placeholder="Поворотная правая" readonly>
-                    <div class="options">
-                      <div onclick="show('Поворотная правая')">Поворотная правая</div>
-                      <div onclick="show('Поворотная левая')">Поворотная левая</div>
-                      <div onclick="show('Глухая створка')">Глухая створка</div>
-                    </div>
-                </div> -->
                 <div class="custom-select custom-select-img">
                     <select>
                       <option value="0">Поворотная правая</option>
@@ -203,10 +146,6 @@
             <div class="calculator_wrapping">
                 <div class="calculator_select-wrap">
                     <h3 class="calculator_subtitle">Тип фурнитуры:</h3>
-                    <!-- <select class="calculator_select">
-                        <option class="calculator_option">Обычная</option>
-                        <option class="calculator_option">Обычная</option>
-                    </select> -->
                     <div class="custom-select">
                         <select>
                           <option value="0">Обычная</option>
@@ -277,6 +216,25 @@
             </div>
         </div>
         </div>
+       
+        <details class="calculator_details">
+            <summary class="calculator_summary"><div class="calculator_price_wrap">
+                <p class="calculator_price_text">Итого:</p>
+                <p class="calculator_price_sum">6 950</p>
+                <p class="calculator_price_sum">₽</p>
+               
+            </div>
+            <img src="./assets/images/arrow.svg" alt="">
+            </summary>
+           
+          
+            <div class="calculator_content-bottom">
+                <p class="calculator_price_text">Итого:</p>
+                <p class="calculator_price_sum">6 950</p>
+                <p class="calculator_price_sum">₽</p>
+            </div>
+          </details>
+
         <div class="modal">
             <div class="modal-wrapper">
                 <div class="modal-header">
