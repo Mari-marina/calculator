@@ -594,6 +594,10 @@
     padding: 20px;
 }
 
+details summary::-webkit-details-marker {
+    display: none;
+}
+
 details > summary {
     list-style-type: none;
     list-style-image: none;
@@ -1088,6 +1092,10 @@ a {
     text-decoration: none;
 }
 
+button:hover {
+    opacity: 0.9;
+}
+
 input {
     font-family: "Nunito Sans";
 }
@@ -1466,6 +1474,52 @@ p, label, option {
     -moz-border-radius: 1px;
     -ms-border-radius: 1px;
     -o-border-radius: 1px;
+}
+
+.radio-button {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 74px;
+    height: 74px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 6px;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@media all and (max-width: 800px) {
+    .radio-button {
+        width: 58px;
+        height: 58px;
+    }
+}
+
+input {
+    visibility: hidden;
+    position: absolute;
+}
+
+input:checked + .radio-button {
+    border: 3px solid #213564;
+}
+
+.radio-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+@media all and (max-width: 800px) {
+    .radio-img {
+        width: 54px;
+        height: 54px;
+    }
 }
 
 .modal {
