@@ -1485,7 +1485,7 @@ p, label, option {
     height: 74px;
     border-radius: 50px;
     cursor: pointer;
-    margin: 6px;
+    margin: 4px;
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-pack: center;
@@ -1499,12 +1499,12 @@ p, label, option {
     }
 }
 
-input {
+.input-radio-button {
     visibility: hidden;
     position: absolute;
 }
 
-input:checked + .radio-button {
+.input-radio-button:checked + .radio-button {
     border: 3px solid #213564;
 }
 
