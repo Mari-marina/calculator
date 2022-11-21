@@ -23,6 +23,12 @@
 @media all and (max-width: 420px) {
     .calculator {
         padding-top: 40px;
+        padding: 0 18px;
+    }
+}
+
+@media all and (max-width: 370px) {
+    .calculator {
         padding: 0 10px;
     }
 }
@@ -592,6 +598,7 @@ details > summary {
     list-style-type: none;
     list-style-image: none;
     background: #213564;
+    list-style: #213564;
 }
 
 details[open] img {
@@ -1079,10 +1086,6 @@ body {
 
 a {
     text-decoration: none;
-}
-
-button:hover {
-    opacity: 0.9;
 }
 
 input {
