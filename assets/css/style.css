@@ -129,6 +129,14 @@
     margin-left: 7px;
 }
 
+.calculator_info-color {
+    fill: #F5BF39;
+}
+
+.calculator_info-color:hover, .calculator_info-color:active {
+    fill: #213564;
+}
+
 .calculator_select, .calculator_option {
     width: 260px;
     height: 50px;
@@ -372,8 +380,13 @@
     margin-top: 25px;
 }
 
+.calculator_img {
+    stroke: #CDD2E0;
+    height: 48px;
+}
+
 .calculator_img:hover {
-    fill: #213564;
+    stroke: #213564;
 }
 
 .calculator_options_select {
