@@ -86,6 +86,10 @@
     }
 }
 
+.calculator_select-optional {
+    margin-top: 35px;
+}
+
 .calculator_button {
     width: 303px;
     height: 55px;
