@@ -7,11 +7,11 @@
 
 .calculator {
     box-shadow: 0px 10px 50px rgba(56, 82, 100, 0.1);
-    padding: 0 20px;
+    padding: 123px 20px 30px;
     max-width: 990px;
     width: 100%;
     margin: 0 auto;
-    padding-top: 123px;
+    /*padding-top: 123px;*/
 }
 
 @media all and (max-width: 1020px) {
@@ -22,8 +22,7 @@
 
 @media all and (max-width: 420px) {
     .calculator {
-        padding-top: 40px;
-        padding: 0 18px;
+        padding: 40px 18px 30px;
     }
 }
 
@@ -488,7 +487,7 @@
     grid-template-columns: repeat(2, 1fr);
     padding: 30px;
     grid-row-gap: 14px;
-    margin-bottom: 40px;
+
 
 }
 
