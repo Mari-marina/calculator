@@ -1948,28 +1948,27 @@ p, label, option {
     margin: -20px;
 }
 .calculator_price_input_new,
-.calculator_price_btn_new
-{
+.calculator_price_btn_new {
     width: 90%;
     height: 52px;
     color: #3C3C3B;
-
-
 }
-.calculator_details_input-height{
-    justify-content: center;
-    width: 100%;
-    height: 52px;
-    display: flex;
-    margin-bottom: 18px;
-
-
-}
-.calculator_price_input_new::placeholder {
+.calculator_price_input_new {
     display: flex;
     align-items: center;
-
+    background: #FFFFFF;
+    border: 1px solid #CBCBCB;
+    height: 50px;
+    margin-bottom: 16px;
+    padding-left: 20px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
 }
+
+
 .calculator_price_btn_new {
     border: none;
     -webkit-border: none;
