@@ -1953,6 +1953,7 @@ p, label, option {
     width: 90%;
     height: 52px;
     color: #3C3C3B;
+    margin: 0 auto;
 }
 .calculator_details_input-height{
     width: 100%;
