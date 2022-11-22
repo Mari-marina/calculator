@@ -489,7 +489,9 @@
     padding: 30px;
     grid-row-gap: 14px;
     margin-bottom: 40px;
+
 }
+
 
 @media all and (max-width: 470px) {
     .calculator_form {
@@ -562,6 +564,8 @@
     width: 100%;
     display: none;
     padding: 20px;
+
+;
 }
 
 @media all and (max-width: 860px) {
@@ -573,7 +577,10 @@
 @media all and (max-width: 500px) {
     .calculator_details {
         height: 65px;
-    }
+        position: sticky;
+        bottom: 0;
+
+}
 }
 
 .calculator_summary {
@@ -583,6 +590,13 @@
     align-items: center;
     -ms-flex-pack: justify;
     justify-content: space-between;
+}
+
+@media all and (max-width: 500px) {
+    .calculator_summary {
+        margin-top: -8px;
+
+    }
 }
 
 .calculator_summary .calculator_price_wrap {
@@ -1921,3 +1935,6 @@ p, label, option {
 [tooltip][flow^="right"]:hover::after {
   -webkit-animation: tooltips-horz 300ms ease-out forwards;
           animation: tooltips-horz 300ms ease-out forwards; }
+
+
+
