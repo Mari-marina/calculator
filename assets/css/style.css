@@ -1949,4 +1949,9 @@ p, label, option {
 .calculator_price_btn_new {
     width: 90%;
     height: 52px;
+    color: black;
+}
+.calculator_price_input_new::placeholder {
+    display: flex;
+    align-items: center;
 }
