@@ -276,6 +276,7 @@
 
 .calculator_price_btn {
     background: #F5BF39;
+    color: #3C3C3B;
     border-radius: 10px;
     width: 230px;
     height: 65px;
@@ -284,6 +285,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;
+    border: none;
 }
 
 .calculator_blocks, .calculator_block, .calculator_progress_wrapper {
@@ -1949,12 +1951,22 @@ p, label, option {
 .calculator_price_btn_new {
     width: 90%;
     height: 52px;
-    color: black;
+    color: #3C3C3B;
 }
 .calculator_price_input_new::placeholder {
     display: flex;
     align-items: center;
+
 }
 .calculator_price_btn_new {
     border: none;
+    -webkit-border: none;
+
 }
+
+.calculator_price_btn_new {
+    border: none;
+    -webkit-border: none;
+
+}
+
