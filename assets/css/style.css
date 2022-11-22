@@ -1955,3 +1955,6 @@ p, label, option {
     display: flex;
     align-items: center;
 }
+.calculator_price_btn_new {
+    border: none;
+}
