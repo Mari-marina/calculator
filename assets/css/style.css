@@ -613,9 +613,15 @@
 @media all and (max-width: 860px) {
     .calculator_details {
         display: block;
-        position: sticky;
-        bottom: 0;
+        /* position: sticky;
+        bottom: 0; */
     }
+}
+
+.calculator_details_block {
+    position: sticky;
+        bottom: 0;
+        height: max-content;
 }
 
 @media all and (max-width: 500px) {
@@ -671,6 +677,9 @@ details[open] img {
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
+}
+details[open] {
+   height: 204px;
 }
 
 .dropdown-top input, .options-top {
@@ -2031,3 +2040,47 @@ p, label, option {
     width: 300px;
 }
 
+/* 
+details > summary::-webkit-details-marker {
+    list-style-type: none;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+details > summary {
+    list-style-type: none;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+details[open] {
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+details[open] img {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    
+}
+
+
+  details[open] summary ~ * {
+    animation: sweep .5s;
+    -webkit-animation: sweep .5s;
+}
+
+@keyframes sweep {
+    0%    {opacity: 0; margin-top: -20px}
+    100%  {opacity: 1; margin-top: 0px}
+}
+ */
