@@ -168,6 +168,7 @@
     -ms-flex-align: center;
     align-items: center;
     position: fixed;
+    margin-top: 44px;
 }
 @media all and (max-width: 954px) {
     .calculator_price_block {
@@ -344,6 +345,7 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     max-width: 572px;
+    /* margin-top: 44px; */
 }
 @media all and (max-width: 954px) {
     .calculator_block {
