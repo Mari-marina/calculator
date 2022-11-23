@@ -155,10 +155,10 @@
     padding: 0 20px;
 }
 
-.calculator_price {
+.calculator_price_block {
     background: #213564;
     color: #ffffff;
-    max-width: 390px;
+    max-width: 292px;
     width: 100%;
     padding: 66px 30px;
     display: -ms-flexbox;
@@ -167,8 +167,13 @@
     flex-direction: column;
     -ms-flex-align: center;
     align-items: center;
+    position: fixed;
 }
-
+@media all and (max-width: 954px) {
+    .calculator_price_block {
+        max-width: 262px;
+    }
+}
 @media all and (max-width: 990px) {
     .calculator_price {
         height: -webkit-max-content;
@@ -192,6 +197,7 @@
 }
 
 .calculator_price_text {
+    font-family: 'Roboto';
     font-weight: 400;
     font-size: 22px;
     line-height: 32px;
@@ -199,10 +205,16 @@
 }
 
 .calculator_price_sum {
+    font-family: 'Roboto';
     color: #F5BF39;
     font-weight: 400;
     font-size: 36px;
     line-height: 44px;
+}
+@media all and (max-width: 996px) {
+    .calculator_price_sum {
+        font-size: 32px;
+    }
 }
 
 .calculator_price_sum:last-child {
@@ -331,6 +343,18 @@
     margin-right: 30px;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    max-width: 572px;
+}
+@media all and (max-width: 954px) {
+    .calculator_block {
+        margin-right: 12px;
+        max-width: 546px;
+    }
+}
+@media all and (max-width: 860px) {
+    .calculator_block {
+        max-width: 570px;
+    }
 }
 
 @media all and (max-width: 640px) {
@@ -572,14 +596,14 @@
 @media all and (max-width: 860px) {
     .calculator_details {
         display: block;
+        position: sticky;
+        bottom: 0;
     }
 }
 
 @media all and (max-width: 500px) {
     .calculator_details {
         height: 65px;
-        position: sticky;
-        bottom: 0;
 
 }
 }
@@ -1979,5 +2003,8 @@ p, label, option {
     border: none;
     -webkit-border: none;
 
+}
+.calculator_price {
+    width: 300px;
 }
 
